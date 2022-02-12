@@ -1,0 +1,360 @@
+:root {
+	--primary-color: #444;
+	--text-color: #ccc;
+	--light-text-color: #e0e0e0;
+	--link-color: #34aeeb;
+	--link-color-hover: #90cbff;
+	--border-color: #aaa;
+	--highlight-background: #666;
+	--heading-background: #555;
+
+	--bg-danger: #ff5757;
+}
+
+body {
+	color: var(--text-color);
+	background-color: var(--primary-color);
+}
+
+body > #header,
+.navbar {
+	background-color: var(--primary-color);
+}
+
+#header button,
+[role='button'],
+.form-control {
+	color: var(--text-color);
+	background-color: var(--primary-color);
+}
+
+#header button:hover,
+[role='button']:hover {
+	color: var(--light-text-color);
+	background-color: var(--highlight-background);
+}
+
+button.btn-danger {
+	color: var(--bg-danger);
+	border-color: var(--bg-danger);
+}
+
+#ipython_notebook {
+	padding-left: 3em;
+	padding-right: 3em;
+	background: linear-gradient(
+		90deg,
+		rgba(68,68,68,1) 0%,
+		rgba(119,119,119,1) 15%,
+		rgba(119,119,119,1) 85%,
+		rgba(68,68,68,1) 100%
+	);
+}
+
+a {
+	color: var(--link-color);
+}
+
+a:hover {
+	color: var(--link-color-hover)
+}
+
+.btn-default {
+	color: var(--text-color);
+	background-color: var(--primary-color);
+}
+
+.btn-default:hover {
+	color: var(--light-text-color);
+	background-color: var(--highlight-background);
+}
+
+#tabs {
+	border-color: var(--border-color);
+}
+
+#tabs a:hover {
+	color: var(--link-color-hover);
+	background-color: var(--heading-background);
+} 
+
+.nav-tabs > li.active > a {
+	color: var(--text-color);
+	background-color: var(--primary-color);
+	border-color:  var(--border-color);
+}
+
+.nav-tabs > li.active > a:hover {
+	background-color: var(--highlight-background);
+}
+
+.list_container > div {
+	border-color: var(--border-color);
+}
+
+.list_item {
+	border-color: var(--border-color);
+}
+
+.list_item:hover {
+	color: var(--light-text-color);
+	background-color: var(--highlight-background);
+}
+
+.dropdown-menu {
+	background-color: var(--primary-color);
+}
+
+.dropdown-menu > li > a {
+	color: var(--text-color);
+}
+
+.dropdown-menu > li > a:hover {
+	color: var(--light-text-color);
+	background-color: var(--highlight-background);
+}
+
+.item_icon {
+	color: var(--text-color);
+}
+
+.panel {
+	background-color: var(--primary-color);
+}
+
+.panel-heading {
+	background-color: var(--heading-background);
+}
+
+.modal-dialog .modal-content {
+	background-color: var(--primary-color);
+}
+
+.modal-content .modal-header button {
+	color: var(--bg-danger);
+    text-shadow: 0 1px 0 #740808;
+}
+
+
+/* tab - files */
+
+#notebook_list_header {
+	background-color: var(--primary-color);
+}
+
+.breadcrumb > li + li:before {
+	color: var(--light-text-color);
+}
+
+.item_buttons .running-indicator {
+	color: #5cb85c;
+}
+
+/* tab - running */
+
+#running .panel-group .panel .panel-heading {
+	background-color: var(--heading-background);
+}
+
+/* notebook */
+
+#notebook {
+	background-color: var(--highlight-background);
+}
+
+#notebook_panel {
+	background-color: var(--primary-color);
+}
+
+.notebook_app #header {
+	padding-bottom: 3px;
+}
+
+.notebook_app #header .header-bar {
+	background-color: var(--highlight-background);
+}
+
+.container,
+#notebook-container {
+	background-color: var(--primary-color);
+}
+
+.header-bar {
+	background-color: var(--highlight-background);
+}
+
+#kernel_indicator .kernel_indicator_name {
+	color: var(--text-color);
+}
+
+#notification_trusted {
+	background-color: var(--highlight-background);
+}
+
+#menubar .navbar {
+	border-color: var(--highlight-background);
+}
+
+.navbar-default .navbar-collapse {
+	background-color: var(--highlight-background);
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: var(--text-color);
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: var(--light-text-color);
+}
+
+div.input_prompt {
+	color: var(--link-color);
+}
+
+div.text_cell_render {
+	color:  var(--text-color);
+}
+
+.rendered_html,
+.rendered_html table {
+	color: var(--text-color);
+}
+
+.rendered_html tbody tr:hover,
+.rendered_html tbody tr:nth-child(odd):hover {
+	background-color: rgba( 100, 200, 240, 0.35 );
+}
+
+.rendered_html tbody tr:nth-child(odd) {
+	background-color: var(--highlight-background);
+}
+
+
+div.output_text,
+div.output_text pre {
+	color: var(--text-color);
+}
+
+.output_subarea.output_png {
+	background-color: var(--highlight-background);
+}
+
+/* code mirror */
+/*
+    Adapted from: dracula (https://github.com/codemirror/CodeMirror/blob/master/theme/dracula.css)
+    Author: Michael Kaminsky (http://github.com/mkaminsky11)
+    Original dracula color scheme by Zeno Rocha (https://github.com/zenorocha/dracula-theme)
+*/
+
+.CodeMirror,
+.CodeMirror-gutters {
+  background-color: #282a36 !important;
+  color: #f8f8f2 !important;
+  border: none;
+}
+
+.CodeMirror-gutters { 
+	color: #282a36;
+}
+
+.CodeMirror-cursor {
+	border-left: solid thin #f8f8f0;
+}
+
+.CodeMirror-linenumber {
+	color: #6D8A88;
+}
+
+.CodeMirror-selected {
+	background: rgba(255, 255, 255, 0.10);
+}
+
+.CodeMirror-line::selection,
+.CodeMirror-line > span::selection,
+.CodeMirror-line > span > span::selection {
+	background: rgba(255, 255, 255, 0.10);
+}
+
+.CodeMirror-line::-moz-selection,
+.CodeMirror-line > span::-moz-selection,
+.CodeMirror-line > span > span::-moz-selection {
+	background: rgba(255, 255, 255, 0.10);
+}
+
+.cm-s-default span.cm-header {
+	color: #8787ff;
+}
+
+.cm-s-ipython span.cm-comment {
+	color: #00c5c5;
+}
+
+.cm-s-ipython span.cm-string,
+.cm-s-ipython span.cm-string-2 {
+	color: #ff6f6f;
+}
+
+.cm-s-ipython span.cm-number {
+	color: #bd93f9;
+}
+
+.cm-s-ipython span.cm-variable,
+.cm-s-ipython span.cm-variable-2 {
+	color: #50fa7b;
+	/*color: #57ff44;*/
+}
+
+.cm-s-ipython span.cm-def {
+	color: #50fa7b;
+}
+
+.cm-s-ipython span.cm-operator {
+	color: #ff36a9;
+}
+
+.cm-s-ipython span.cm-keyword {
+	color: #ff36a9;
+}
+
+.cm-s-ipython span.cm-atom {
+	color: #bd93f9;
+}
+
+.cm-s-ipython span.cm-meta {
+	color: #f8f8f2;
+}
+
+.cm-s-ipython span.cm-tag {
+	color: #ff79c6;
+}
+
+.cm-s-ipython span.cm-attribute {
+	color: #50fa7b;
+}
+
+.cm-s-ipython span.cm-qualifier {
+	color: #50fa7b;
+}
+
+.cm-s-ipython span.cm-property {
+	color: #66d9ef;
+}
+
+.cm-s-ipython span.cm-builtin {
+	color: #50fa7b;
+}
+
+.cm-s-ipython span.cm-variable-3,
+.cm-s-ipython span.cm-type {
+	color: #ffb86c;
+}
+
+.CodeMirror-activeline-background {
+	color: var(--light-text-color);
+	background: rgba(255,255,255,0.1);
+}
+
+.CodeMirror-matchingbracket {
+	text-decoration: underline;
+	color: white !important;
+}
