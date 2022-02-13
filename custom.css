@@ -239,6 +239,10 @@ div.output_text pre {
 	background-color: var(--highlight-background);
 }
 
+div.output_stderr {
+  background-color: #6c2323;
+}
+
 /* code mirror */
 /*
     Adapted from: dracula (https://github.com/codemirror/CodeMirror/blob/master/theme/dracula.css)
